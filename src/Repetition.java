@@ -71,6 +71,7 @@ _____________________________________________________________________________
 
         Sedan mercedes = new Sedan("Mercedes", 110, 5, "Black");
         System.out.println(mercedes);
+        System.out.println("_________________________________________");
 /*
 _____________________________________________________________________________
 */
@@ -87,7 +88,9 @@ _____________________________________________________________________________
                 e.printStackTrace();
         }
 
-        System.out.println(listOfWords.size());
+        System.out.println("this is how many elements/words there in the file: " + listOfWords.size());
+
+        System.out.println("_________________________________________");
 /*
         there is 20 Strings in the file
 _____________________________________________________________________________
@@ -98,8 +101,16 @@ _____________________________________________________________________________
         int aDeathInSeconds = 13;
         int usaPopulation = 331002651;
 
+        int thirdTeenSecInAYear = (365 * 24 * 60 * 60) / 13; //7secInAYear = 4505142
+        int sevenSecInAYear = (365 * 24 * 60 * 60) / 7; //13secInAYear = 2425846
 
+        int sum = (sevenSecInAYear + usaPopulation) - thirdTeenSecInAYear;
+        System.out.println("this is the population of USA when you have summed the it all together: " + sum);
 
+        int growth = (sum * 5);
+        System.out.println("this is the growth of the population after 5 years: " + growth);
+
+        System.out.println("_________________________________________");
 /*
 _____________________________________________________________________________
  */
@@ -130,6 +141,8 @@ _____________________________________________________________________________
 
         arrayListOfNumbers.removeIf(integer -> (integer % input == 0 && integer != input));
         System.out.println(arrayListOfNumbers);
+
+
 /*
 _____________________________________________________________________________
  */
