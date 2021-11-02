@@ -101,13 +101,13 @@ _____________________________________________________________________________
         int aDeathInSeconds = 13;
         int usaPopulation = 331002651;
 
-        int thirdTeenSecInAYear = (365 * 24 * 60 * 60) / 13; //7secInAYear = 4505142
-        int sevenSecInAYear = (365 * 24 * 60 * 60) / 7; //13secInAYear = 2425846
+        int thirdTeenSecInAYear = (365 * 24 * 60 * 60) / 13; //13secInAYear = 2425846
+        int sevenSecInAYear = (365 * 24 * 60 * 60) / 7; //7secInAYear = 4505142
 
         int sum = (sevenSecInAYear + usaPopulation) - thirdTeenSecInAYear;
         System.out.println("this is the population of USA when you have summed the it all together: " + sum);
 
-        int growth = (sum * 5);
+        int growth = (sevenSecInAYear * 5) - (thirdTeenSecInAYear * 5);
         System.out.println("this is the growth of the population after 5 years: " + growth);
 
         System.out.println("_________________________________________");
